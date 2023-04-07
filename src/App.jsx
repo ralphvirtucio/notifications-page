@@ -1,12 +1,30 @@
+import React from 'react';
+
 function App() {
   return (
-    <div className='App'>
-      <h1>Hello World</h1>
-    </div>
+    <React.Fragment>
+      <div>
+        <header>
+          <h1>Notifications</h1>
+          <div className=''>
+            <p>Mark all as read</p>
+          </div>
+        </header>
+
+        {/* Main Content Notification Page */}
+        <main>Notification Page</main>
+      </div>
+    </React.Fragment>
   );
 }
 
 export default App;
+
+// TODO:
+// - Distinguish between "unread" and "read" notifications
+// - Select "Mark all as read" to toggle the visual state of the unread notifications and set the number of unread messages to zero
+// - View the optimal layout for the interface depending on their device's screen size
+// - See hover and focus states for all interactive elements on the page
 
 // Notifications 3
 
