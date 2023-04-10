@@ -1,5 +1,6 @@
 import React from 'react';
 import { Header } from './components/Header/Header';
+import { Notification } from './components/Notification/Notification';
 
 function App() {
   return (
@@ -7,7 +8,7 @@ function App() {
       <div>
         <Header />
 
-        <main>Notification Page</main>
+        <Notification />
       </div>
     </React.Fragment>
   );

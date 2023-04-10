@@ -3,7 +3,27 @@
   justify-content: space-between;
   align-items: center;
   padding-block-start: 1rem;
+  padding-block-end: 2rem;
   padding-inline: 1rem;
+}
+
+.notif__container {
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+}
+
+.main__heading {
+  font-size: 1.25rem;
+}
+
+.notif__badge {
+  background-color: var(--primary-color-2);
+  color: var(--neutral-color-1);
+  padding-inline: .7rem;
+  border-radius: 6px;
+  font-weight: var(--fw-800);
+  font-size: 1.2rem;
 }
 
 .mark__all {
