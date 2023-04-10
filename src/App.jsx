@@ -1,17 +1,12 @@
 import React from 'react';
+import { Header } from './components/Header/Header';
 
 function App() {
   return (
     <React.Fragment>
       <div>
-        <header>
-          <h1>Notifications</h1>
-          <div className=''>
-            <p>Mark all as read</p>
-          </div>
-        </header>
+        <Header />
 
-        {/* Main Content Notification Page */}
         <main>Notification Page</main>
       </div>
     </React.Fragment>
