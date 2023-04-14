@@ -1,14 +1,17 @@
 import React from 'react';
+import styles from './Notification.module.css';
 import mark from '../../images/avatar-mark-webber.webp';
 
 export const Notification = () => {
   return (
-    <div>
+    <div className={styles.notification}>
       <img src={mark} alt='Mark Webber' />
-      <div className='content'>
-        <h2>Mark Webber</h2>
-        <p>reacted to your recent post My first tournament!</p>
-        <p>1m ago</p>
+      <div className={styles.content}>
+        <p className={styles.notification__message}>
+          <strong>Mark Webber</strong> reacted to your recent post
+          <span> My first tournament today!</span>
+        </p>
+        <p className={styles.time__active}>1m ago</p>
       </div>
     </div>
   );

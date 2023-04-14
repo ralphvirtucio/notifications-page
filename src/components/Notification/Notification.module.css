@@ -1,0 +1,26 @@
+.notification {
+  display: flex;
+  gap: 1rem;
+}
+
+.notification__message {}
+
+
+.notification__message span {
+  color: var(--neutral-color-6);
+  font-weight: var(--fw-800);
+}
+
+.content {
+  font-size: 1rem;
+  color: var(--neutral-color-6);
+}
+
+.content strong {
+  font-size: 1rem;
+  color: var(--neutral-color-7);
+}
+
+.time__active {
+  color: var(--neutral-color-5);
+}
