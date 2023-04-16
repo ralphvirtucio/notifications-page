@@ -5,14 +5,14 @@ import mark from '../../images/avatar-mark-webber.webp';
 export const Notification = () => {
   return (
     <div className={styles.notification}>
-      <img src={mark} alt='Mark Webber' />
+      <img src={mark} alt='Mark Webber' className={styles.profile__img} />
       <div className={styles.content}>
         <p className={styles.notification__message}>
           <strong>Mark Webber</strong> reacted to your recent post
           <span> My first tournament today!</span>
         </p>
-        <p className={styles.time__active}>1m ago</p>
       </div>
+      <p className={styles.time__active}>1m ago</p>
     </div>
   );
 };
