@@ -1,11 +1,13 @@
 import React from 'react';
 import { Header } from './components/Header/Header';
+import './App.css';
 import { Notification } from './components/Notification/Notification';
 import mark from './images/avatar-mark-webber.webp';
 import angela from './images/avatar-angela-gray.webp';
 import jacob from './images/avatar-jacob-thompson.webp';
 import rizky from './images/avatar-rizky-hasanuddin.webp';
 import kimberly from './images/avatar-kimberly-smith.webp';
+import kimberly_chess from './images/image-chess.webp';
 import nathan from './images/avatar-nathan-peterson.webp';
 import anna from './images/avatar-anna-kim.webp';
 
@@ -15,55 +17,138 @@ function App() {
       <div>
         <Header />
 
-        <Notification
-          img={mark}
-          name='Mark Webber'
-          status='reacted to your recent post'
-          content='My first tournament today!'
-          time='1m'
-        />
-        <Notification
-          img={angela}
-          name='Angela Gray'
-          status='followed you'
-          content=''
-          time='5m'
-        />
-        <Notification
-          img={jacob}
-          name='Jacob Thompson'
-          status='has joined your group'
-          content='Chess Club'
-          time='1 day'
-        />
-        <Notification
-          img={rizky}
-          name='Rizky Hasanuddin'
-          status='sent you a private message'
-          content=''
-          time='5 days'
-        />
-        <Notification
-          img={kimberly}
-          name='Kimberly Smith'
-          status='commented on your picture'
-          content=''
-          time='1 week'
-        />
-        <Notification
-          img={nathan}
-          name='Nathan Peterson'
-          status='reacted to your recent post'
-          content='5 end-game strategies to increase your win rate'
-          time='2 weeks'
-        />
-        <Notification
-          img={anna}
-          name='Anna Kim'
-          status='left the group'
-          content='Chess Club'
-          time='2 weeks'
-        />
+        <main>
+          {/* MARK WEBBER */}
+          <section className='notification'>
+            <img src={mark} alt='Mark Webber' className='notification__img' />
+            <div className='notification__container'>
+              <p className='notification__content'>
+                <strong className='notification__username'>Mark Webber</strong>{' '}
+                reacted to your recent post
+                <span className='notification__text'>
+                  My first tournament today!
+                  <span className='notification__status'></span>
+                </span>
+              </p>
+              <p className='notification__online-status'>1m ago</p>
+            </div>
+          </section>
+
+          {/* ANGELA */}
+          <section className='notification'>
+            <img src={angela} alt='Angela' className='notification__img' />
+            <div className='notification__container'>
+              <p className='notification__content'>
+                <strong className='notification__username'>Angela Gray</strong>
+                followed you
+                <span className='notification__status'></span>
+                {/* <span className='notification__text'>
+                  My first tournament today!
+                  <span className='notification__status'></span>
+                </span> */}
+              </p>
+              <p className='notification__online-status'>5m ago</p>
+            </div>
+          </section>
+
+          {/* JACOB */}
+          <section className='notification'>
+            <img src={jacob} alt='Jacob' className='notification__img' />
+            <div className='notification__container'>
+              <p className='notification__content'>
+                <strong className='notification__username'>
+                  Jacob Thompson
+                </strong>
+                has joined your group
+                <span className='notification__text'>
+                  Chess Club
+                  <span className='notification__status'></span>
+                </span>
+              </p>
+              <p className='notification__online-status'>1 day ago</p>
+            </div>
+          </section>
+
+          {/* RIZKY */}
+          <section className='notification'>
+            <img
+              src={rizky}
+              alt='Rizky Hasanuddin'
+              className='notification__img'
+            />
+            <div className='notification__container'>
+              <p className='notification__content'>
+                <strong className='notification__username'>
+                  Rizky Hasanuddin
+                </strong>
+                sent you a private message
+              </p>
+              <p className='notification__online-status'>5 days ago</p>
+              <div className='notification__pm-message'>
+                <p>
+                  Hello, thanks fro setting up the Chess Club. I've been a
+                  member for a few weeks now and I'm already having lots of fun
+                  and improving my game.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          {/* KIMBERLY */}
+          <section className='notification'>
+            <img src={kimberly} alt='Kimberly' className='notification__img' />
+            <div className='notification__container'>
+              <div className='div'>
+                <p className='notification__content'>
+                  <strong className='notification__username'>
+                    Kimberly Smith
+                  </strong>
+                  commented on your picture
+                </p>
+                <img
+                  src={kimberly_chess}
+                  alt='Kimberly Playing Chess'
+                  className='notification__content-img'
+                />
+              </div>
+
+              <p className='notification__online-status'>1 week ago</p>
+            </div>
+          </section>
+
+          {/* NATHAN */}
+          <section className='notification'>
+            <img
+              src={nathan}
+              alt='Nathan Peterson'
+              className='notification__img'
+            />
+            <div className='notification__container'>
+              <p className='notification__content'>
+                <strong className='notification__username'>
+                  Nathan Peterson
+                </strong>{' '}
+                reacted to your recent post{' '}
+                <span className='notification__text'>
+                  5 end-game strategies to increase your win rate
+                </span>
+              </p>
+              <p className='notification__online-status'>2 weeks ago</p>
+            </div>
+          </section>
+
+          <section className='notification'>
+            <img src={anna} alt='Anna Kim' className='notification__img' />
+            <div className='notification__container'>
+              <p className='notification__content'>
+                <strong className='notification__username'>Anna Kim</strong>
+                left the group
+                <span className='notification__text'>Chess Club</span>
+              </p>
+              <p className='notification__online-status'>2 weeks ago</p>
+            </div>
+          </section>
+        </main>
       </div>
     </React.Fragment>
   );
