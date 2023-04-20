@@ -1,6 +1,13 @@
 import React from 'react';
 import { Header } from './components/Header/Header';
 import { Notification } from './components/Notification/Notification';
+import mark from './images/avatar-mark-webber.webp';
+import angela from './images/avatar-angela-gray.webp';
+import jacob from './images/avatar-jacob-thompson.webp';
+import rizky from './images/avatar-rizky-hasanuddin.webp';
+import kimberly from './images/avatar-kimberly-smith.webp';
+import nathan from './images/avatar-nathan-peterson.webp';
+import anna from './images/avatar-anna-kim.webp';
 
 function App() {
   return (
@@ -8,13 +15,55 @@ function App() {
       <div>
         <Header />
 
-        <Notification />
-        <Notification />
-        <Notification />
-        <Notification />
-        <Notification />
-        <Notification />
-        <Notification />
+        <Notification
+          img={mark}
+          name='Mark Webber'
+          status='reacted to your recent post'
+          content='My first tournament today!'
+          time='1m'
+        />
+        <Notification
+          img={angela}
+          name='Angela Gray'
+          status='followed you'
+          content=''
+          time='5m'
+        />
+        <Notification
+          img={jacob}
+          name='Jacob Thompson'
+          status='has joined your group'
+          content='Chess Club'
+          time='1 day'
+        />
+        <Notification
+          img={rizky}
+          name='Rizky Hasanuddin'
+          status='sent you a private message'
+          content=''
+          time='5 days'
+        />
+        <Notification
+          img={kimberly}
+          name='Kimberly Smith'
+          status='commented on your picture'
+          content=''
+          time='1 week'
+        />
+        <Notification
+          img={nathan}
+          name='Nathan Peterson'
+          status='reacted to your recent post'
+          content='5 end-game strategies to increase your win rate'
+          time='2 weeks'
+        />
+        <Notification
+          img={anna}
+          name='Anna Kim'
+          status='left the group'
+          content='Chess Club'
+          time='2 weeks'
+        />
       </div>
     </React.Fragment>
   );
