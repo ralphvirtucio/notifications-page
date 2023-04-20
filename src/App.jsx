@@ -9,6 +9,12 @@ function App() {
         <Header />
 
         <Notification />
+        <Notification />
+        <Notification />
+        <Notification />
+        <Notification />
+        <Notification />
+        <Notification />
       </div>
     </React.Fragment>
   );
