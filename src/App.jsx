@@ -11,14 +11,18 @@ import kimberly_chess from './images/image-chess.webp';
 import nathan from './images/avatar-nathan-peterson.webp';
 import anna from './images/avatar-anna-kim.webp';
 
+// TODO:
+
+// FIX NOTIFICATION LAYOUT
+// MAKE IT A REUSABLE CONTENT
+
 function App() {
   return (
     <React.Fragment>
       <div>
         <Header />
 
-        <main>
-          {/* MARK WEBBER */}
+        {/* <main>
           <section className='notification'>
             <img src={mark} alt='Mark Webber' className='notification__img' />
             <div className='notification__container'>
@@ -34,7 +38,6 @@ function App() {
             </div>
           </section>
 
-          {/* ANGELA */}
           <section className='notification'>
             <img src={angela} alt='Angela' className='notification__img' />
             <div className='notification__container'>
@@ -42,16 +45,11 @@ function App() {
                 <strong className='notification__username'>Angela Gray</strong>
                 followed you
                 <span className='notification__status'></span>
-                {/* <span className='notification__text'>
-                  My first tournament today!
-                  <span className='notification__status'></span>
-                </span> */}
               </p>
               <p className='notification__online-status'>5m ago</p>
             </div>
           </section>
 
-          {/* JACOB */}
           <section className='notification'>
             <img src={jacob} alt='Jacob' className='notification__img' />
             <div className='notification__container'>
@@ -69,7 +67,6 @@ function App() {
             </div>
           </section>
 
-          {/* RIZKY */}
           <section className='notification'>
             <img
               src={rizky}
@@ -94,7 +91,6 @@ function App() {
             </div>
           </section>
 
-          {/* KIMBERLY */}
           <section className='notification'>
             <img src={kimberly} alt='Kimberly' className='notification__img' />
             <div className='notification__container'>
@@ -116,7 +112,6 @@ function App() {
             </div>
           </section>
 
-          {/* NATHAN */}
           <section className='notification'>
             <img
               src={nathan}
@@ -148,7 +143,7 @@ function App() {
               <p className='notification__online-status'>2 weeks ago</p>
             </div>
           </section>
-        </main>
+        </main> */}
       </div>
     </React.Fragment>
   );

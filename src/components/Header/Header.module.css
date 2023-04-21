@@ -2,6 +2,43 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-inline: 1rem;
+  margin-block-start: 1.5rem;
+}
+
+
+.notification__heading-badge {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.notification__heading {
+  font-size: 1.25rem;
+  color: var(--neutral-color-7);
+  font-weight: var(--fw-800);
+}
+
+.notification__pill {
+  background-color: var(--primary-color-2);
+  color: var(--neutral-color-1);
+  font-weight: var(--fw-800);
+  padding-inline: .8rem;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+
+.notification__mark-btn {
+  background-color: var(--neutral-color-1);
+  border: none;
+  color: var(--neutral-color-6);
+}
+
+/* .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding-block-start: 1rem;
   margin-block-end: 3rem;
   padding-inline: 1rem;
@@ -28,4 +65,4 @@
 
 .mark__all {
   color: var(--neutral-color-6);
-}
+} */

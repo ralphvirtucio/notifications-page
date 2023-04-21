@@ -4,11 +4,16 @@ import styles from './Header.module.css';
 export const Header = () => {
   return (
     <header className={styles.container}>
-      <div className={styles.notif__container}>
-        <h1 className={styles.main__heading}>Notifications</h1>
-        <span className={styles.notif__badge}>3</span>
+      <div className={styles['notification__heading-badge']}>
+        <h1 className={styles.notification__heading}>Notifications</h1>
+        <p className={styles.notification__pill}>3</p>
       </div>
-      <p className={styles.mark__all}>Mark all as read</p>
+
+      <div>
+        <button className={styles['notification__mark-btn']}>
+          Mark all as read
+        </button>
+      </div>
     </header>
   );
 };
