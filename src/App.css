@@ -77,22 +77,37 @@
   align-self: flex-start;
 }
 
+
 .notification__text {
   color: var(--neutral-color-6);
   line-height: normal;
-  font-size: .85rem;
 }
 
 .user__name {
   color: var(--neutral-color-7);
   font-weight: var(--fw-800);
+  margin-inline-end: .2rem;
 }
 
 .notification__message {
   font-weight: var(--fw-800);
+  margin-inline-start: .2rem;
+
 }
 
 .online__status {
   color: var(--neutral-color-5);
   font-weight: var(--fw-500);
+}
+
+.unread-status {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: var(--primary-color-1);
+  border-radius: 100px;
+  margin-inline-start: .5rem;
+  /*TEMP */
+  margin-block-end: .12rem;
+  /*TEMP */
 }

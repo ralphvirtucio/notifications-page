@@ -30,6 +30,7 @@ function App() {
               recent post{' '}
               <span className='notification__message'>
                 My first tournament today!
+                <span className='unread-status'></span>
               </span>
             </p>
             <p className='online__status'>1m ago</p>
