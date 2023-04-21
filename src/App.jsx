@@ -30,10 +30,35 @@ function App() {
               recent post{' '}
               <span className='notification__message'>
                 My first tournament today!
-                <span className='unread-status'></span>
               </span>
+              <span className='unread-status'></span>
             </p>
             <p className='online__status'>1m ago</p>
+          </div>
+        </div>
+        <div className='notification'>
+          <img src={angela} alt='Angela Gray' className='user__photo' />
+          <div className='notification__content'>
+            <p className='notification__text'>
+              <span className='user__name'>Angela Gray</span> followed you
+              {/* <span className='notification__message'>
+                My first tournament today!
+              </span> */}
+              <span className='unread-status'></span>
+            </p>
+            <p className='online__status'>5m ago</p>
+          </div>
+        </div>
+        <div className='notification'>
+          <img src={jacob} alt='Jacob Smith' className='user__photo' />
+          <div className='notification__content'>
+            <p className='notification__text'>
+              <span className='user__name'>Jacob Smith</span> has joined your
+              group
+              <span className='notification__message'>Chess Club</span>
+              <span className='unread-status'></span>
+            </p>
+            <p className='online__status'>1 day ago</p>
           </div>
         </div>
 
