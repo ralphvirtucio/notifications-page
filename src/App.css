@@ -61,3 +61,38 @@
   display: flex;
   gap: 1rem;
 } */
+
+.notification {
+  display: flex;
+  gap: 1rem;
+  background-color: var(--neutral-color-2);
+  border-radius: 16px;
+  margin-inline: 1rem;
+  padding-inline: 1rem;
+  padding-block: 1rem;
+}
+
+.user__photo {
+  width: 40px;
+  align-self: flex-start;
+}
+
+.notification__text {
+  color: var(--neutral-color-6);
+  line-height: normal;
+  font-size: .85rem;
+}
+
+.user__name {
+  color: var(--neutral-color-7);
+  font-weight: var(--fw-800);
+}
+
+.notification__message {
+  font-weight: var(--fw-800);
+}
+
+.online__status {
+  color: var(--neutral-color-5);
+  font-weight: var(--fw-500);
+}

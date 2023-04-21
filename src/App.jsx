@@ -22,6 +22,20 @@ function App() {
       <div>
         <Header />
 
+        <div className='notification'>
+          <img src={mark} alt='Mark Webber' className='user__photo' />
+          <div className='notification__content'>
+            <p className='notification__text'>
+              <span className='user__name'>Mark Webber</span> reacted to your
+              recent post{' '}
+              <span className='notification__message'>
+                My first tournament today!
+              </span>
+            </p>
+            <p className='online__status'>1m ago</p>
+          </div>
+        </div>
+
         {/* <main>
           <section className='notification'>
             <img src={mark} alt='Mark Webber' className='notification__img' />
