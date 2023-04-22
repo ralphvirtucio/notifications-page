@@ -61,129 +61,56 @@ function App() {
             <p className='online__status'>1 day ago</p>
           </div>
         </div>
+        <div className='notification read'>
+          <img src={rizky} alt='Rizky Hasanuddin' className='user__photo' />
+          <div className='notification__content'>
+            <p className='notification__text'>
+              <span className='user__name'>Rizky Hasanuddin</span> sent you a
+              private message
+              {/* This component has a different content */}
+            </p>
+            <p className='online__status'>5 days ago</p>
+          </div>
+        </div>
 
-        {/* <main>
-          <section className='notification'>
-            <img src={mark} alt='Mark Webber' className='notification__img' />
-            <div className='notification__container'>
-              <p className='notification__content'>
-                <strong className='notification__username'>Mark Webber</strong>{' '}
-                reacted to your recent post
-                <span className='notification__text'>
-                  My first tournament today!
-                  <span className='notification__status'></span>
-                </span>
-              </p>
-              <p className='notification__online-status'>1m ago</p>
-            </div>
-          </section>
+        <div className='notification read'>
+          <img src={kimberly} alt='Kimberly Smith' className='user__photo' />
+          <div className='notification__content'>
+            <p className='notification__text'>
+              <span className='user__name'>Kimberly Smith</span> commented on
+              your picture
+              {/* This component has a picture after the text */}
+            </p>
+            <p className='online__status'>1 week ago</p>
+          </div>
+        </div>
 
-          <section className='notification'>
-            <img src={angela} alt='Angela' className='notification__img' />
-            <div className='notification__container'>
-              <p className='notification__content'>
-                <strong className='notification__username'>Angela Gray</strong>
-                followed you
-                <span className='notification__status'></span>
-              </p>
-              <p className='notification__online-status'>5m ago</p>
-            </div>
-          </section>
+        <div className='notification read'>
+          <img src={nathan} alt='Nathan Peterson' className='user__photo' />
+          <div className='notification__content'>
+            <p className='notification__text'>
+              <span className='user__name'>Nathan Peterson</span> reacted to
+              your recent post{' '}
+              <span className='notification__message'>
+                5 end-game strategies to increase your win rate
+              </span>
+              {/* This component has a picture after the text */}
+            </p>
+            <p className='online__status'>2 weeks ago</p>
+          </div>
+        </div>
 
-          <section className='notification'>
-            <img src={jacob} alt='Jacob' className='notification__img' />
-            <div className='notification__container'>
-              <p className='notification__content'>
-                <strong className='notification__username'>
-                  Jacob Thompson
-                </strong>
-                has joined your group
-                <span className='notification__text'>
-                  Chess Club
-                  <span className='notification__status'></span>
-                </span>
-              </p>
-              <p className='notification__online-status'>1 day ago</p>
-            </div>
-          </section>
-
-          <section className='notification'>
-            <img
-              src={rizky}
-              alt='Rizky Hasanuddin'
-              className='notification__img'
-            />
-            <div className='notification__container'>
-              <p className='notification__content'>
-                <strong className='notification__username'>
-                  Rizky Hasanuddin
-                </strong>
-                sent you a private message
-              </p>
-              <p className='notification__online-status'>5 days ago</p>
-              <div className='notification__pm-message'>
-                <p>
-                  Hello, thanks fro setting up the Chess Club. I've been a
-                  member for a few weeks now and I'm already having lots of fun
-                  and improving my game.
-                </p>
-              </div>
-            </div>
-          </section>
-
-          <section className='notification'>
-            <img src={kimberly} alt='Kimberly' className='notification__img' />
-            <div className='notification__container'>
-              <div className='div'>
-                <p className='notification__content'>
-                  <strong className='notification__username'>
-                    Kimberly Smith
-                  </strong>
-                  commented on your picture
-                </p>
-                <img
-                  src={kimberly_chess}
-                  alt='Kimberly Playing Chess'
-                  className='notification__content-img'
-                />
-              </div>
-
-              <p className='notification__online-status'>1 week ago</p>
-            </div>
-          </section>
-
-          <section className='notification'>
-            <img
-              src={nathan}
-              alt='Nathan Peterson'
-              className='notification__img'
-            />
-            <div className='notification__container'>
-              <p className='notification__content'>
-                <strong className='notification__username'>
-                  Nathan Peterson
-                </strong>{' '}
-                reacted to your recent post{' '}
-                <span className='notification__text'>
-                  5 end-game strategies to increase your win rate
-                </span>
-              </p>
-              <p className='notification__online-status'>2 weeks ago</p>
-            </div>
-          </section>
-
-          <section className='notification'>
-            <img src={anna} alt='Anna Kim' className='notification__img' />
-            <div className='notification__container'>
-              <p className='notification__content'>
-                <strong className='notification__username'>Anna Kim</strong>
-                left the group
-                <span className='notification__text'>Chess Club</span>
-              </p>
-              <p className='notification__online-status'>2 weeks ago</p>
-            </div>
-          </section>
-        </main> */}
+        <div className='notification read'>
+          <img src={anna} alt='Anna Kim' className='user__photo' />
+          <div className='notification__content'>
+            <p className='notification__text'>
+              <span className='user__name'>Anna Kim</span> left the group{' '}
+              <span className='notification__message'>Chess Club</span>
+              {/* This component has a picture after the text */}
+            </p>
+            <p className='online__status'>2 weeks ago</p>
+          </div>
+        </div>
       </div>
     </React.Fragment>
   );

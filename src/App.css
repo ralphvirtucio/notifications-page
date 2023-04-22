@@ -73,6 +73,10 @@
   margin-block-end: 1rem;
 }
 
+.read {
+  background-color: var(--neutral-color-1);
+}
+
 .user__photo {
   width: 40px;
   align-self: flex-start;
